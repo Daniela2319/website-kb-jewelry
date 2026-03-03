@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* 🎨 Tema personalizado KB Jewes */
+@theme {
+  --color-champagne: #f7e7ce;
+  --color-softGold: #c6a75e;
+  --color-beigeLuxury: #f5f1ea;
+  --color-darkLuxury: #1c1a18;
+
+  --font-serifLuxury: "Playfair Display", serif;
+  --font-sansLuxury: "Inter", sans-serif;
+}

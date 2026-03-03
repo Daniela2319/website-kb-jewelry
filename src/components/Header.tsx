@@ -1,0 +1,103 @@
+import { useState } from "react";
+import { Search, User, Heart, ShoppingBag, Menu, X } from "lucide-react";
+import Logo from "../assets/Logo-head.png";
+
+export const LuxuryHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    "High Jewellery",
+    "Jewellery",
+    "Engagement & Bridal",
+    "Watches",
+    "Gifts",
+    "The House",
+  ];
+
+  return (
+    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-neutral-200">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        {/* Logo */}
+        <div className="text-2xl tracking-[0.5em] font-light font-serif cursor-pointer">
+          {Logo && <img src={Logo} alt="KB Jewels Logo" className="h-8" />}
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex gap-14 text-xs uppercase tracking-[0.25em] text-neutral-700">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="relative hover:text-black transition duration-300 after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        {/* Icons Desktop */}
+        <div className="hidden lg:flex items-center gap-6 text-neutral-700">
+          <Search
+            size={18}
+            className="hover:text-black cursor-pointer transition"
+          />
+          <User
+            size={18}
+            className="hover:text-black cursor-pointer transition"
+          />
+          <Heart
+            size={18}
+            className="hover:text-black cursor-pointer transition"
+          />
+          <ShoppingBag
+            size={18}
+            className="hover:text-black cursor-pointer transition"
+          />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`lg:hidden fixed inset-0 bg-white transition-transform duration-500 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-between items-center px-6 py-6 border-b">
+          <div className="text-xl tracking-[0.4em] font-serif">
+            {Logo && <img src={Logo} alt="KB Jewels Logo" className="h-8" />}
+          </div>
+          <button onClick={() => setIsOpen(false)}>
+            <X size={26} />
+          </button>
+        </div>
+
+        <nav className="flex flex-col items-center gap-8 mt-16 text-sm uppercase tracking-[0.3em] text-neutral-800">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="hover:text-black transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex justify-center gap-8 mt-16 text-neutral-700">
+          <Search size={20} />
+          <User size={20} />
+          <Heart size={20} />
+          <ShoppingBag size={20} />
+        </div>
+      </div>
+    </header>
+  );
+};
