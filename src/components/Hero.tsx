@@ -4,7 +4,7 @@ import image from "../assets/photo-hero.png";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative bg-beigeLuxury min-h-screen flex items-center">
+    <section className="relative bg-beigeLuxury min-h-screen flex items-center translate-y-16">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Texto */}
         <div className="space-y-6 animate-fadeIn">
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Imagem */}
-        <div className="relative">
+        <div className="relative ">
           <img
             src={image}
             alt="Elegant Brazilian model wearing luxury ring"

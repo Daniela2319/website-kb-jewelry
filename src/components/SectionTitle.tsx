@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const SectionTitle: React.FC<Props> = ({ title, subtitle }) => (
-  <div className="text-center mb-12">
+  <div className="text-center mt-10 mb-12">
     <h2 className="font-serifLuxury text-3xl md:text-4xl text-darkLuxury">
       {title}
     </h2>

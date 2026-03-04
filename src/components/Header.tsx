@@ -35,26 +35,6 @@ export const LuxuryHeader = () => {
           ))}
         </nav>
 
-        {/* Icons Desktop */}
-        <div className="hidden lg:flex items-center gap-6 text-neutral-700">
-          <Search
-            size={18}
-            className="hover:text-black cursor-pointer transition"
-          />
-          <User
-            size={18}
-            className="hover:text-black cursor-pointer transition"
-          />
-          <Heart
-            size={18}
-            className="hover:text-black cursor-pointer transition"
-          />
-          <ShoppingBag
-            size={18}
-            className="hover:text-black cursor-pointer transition"
-          />
-        </div>
-
         {/* Mobile Menu Button */}
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -90,13 +70,6 @@ export const LuxuryHeader = () => {
             </a>
           ))}
         </nav>
-
-        <div className="flex justify-center gap-8 mt-16 text-neutral-700">
-          <Search size={20} />
-          <User size={20} />
-          <Heart size={20} />
-          <ShoppingBag size={20} />
-        </div>
       </div>
     </header>
   );

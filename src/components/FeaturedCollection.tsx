@@ -1,7 +1,7 @@
 // components/FeaturedCollection.tsx
 import { SectionTitle } from "./SectionTitle";
 import image1 from "../assets/photo-feature3.webp";
-import image2 from "../assets/photo-feature1.webp";
+import image2 from "../assets/photo-feat1.png";
 import image3 from "../assets/photo-feature2.webp";
 
 export const FeaturedCollection = () => {
