@@ -1,9 +1,9 @@
 // features/home/About.tsx
 import { motion } from "framer-motion";
 import { Gem, Hand } from "lucide-react";
-import image from "../assets/photo-carosel.png";
-import image2 from "../assets/photo-feat1.png";
-import image3 from "../assets/photo-about.webp";
+import image from "../../assets/photo-carosel.png";
+import image2 from "../../assets/photo-feat1.png";
+import image3 from "../../assets/photo-about.webp";
 
 export const About = () => {
   return (

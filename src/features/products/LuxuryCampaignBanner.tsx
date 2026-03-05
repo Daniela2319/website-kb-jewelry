@@ -1,6 +1,6 @@
 // features/campaign/LuxuryCampaignSection.tsx
 import { motion } from "framer-motion";
-import image from "../assets/image_banner.png";
+import image from "../../assets/image_banner.png";
 export function LuxuryCampaignSection() {
   return (
     <section className="relative py-28 bg-beigeLuxury overflow-hidden">

@@ -1,73 +1,152 @@
-# React + TypeScript + Vite
+# KB Jewels
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium digital experience crafted for a modern luxury jewelry brand.
 
-Currently, two official plugins are available:
+KB Jewels is a high-end responsive landing page built with modern frontend technologies, focusing on elegant design, immersive visuals, and seamless user interaction.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to simulate the digital presence of a luxury jewelry house, combining refined aesthetics with performant web architecture.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## ✨ Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+KB Jewels delivers a sophisticated browsing experience inspired by world-class luxury brands.  
+The interface highlights jewelry pieces through cinematic layouts, smooth transitions, and carefully balanced typography.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This project emphasizes:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+• Visual storytelling  
+• High-end UI design  
+• Performance-first architecture  
+• Responsive luxury experience
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+
+## 🖼 Product Experience
+
+The website features an immersive product browsing experience including:
+
+• Signature product carousel  
+• Fullscreen product preview  
+• Elegant hover interactions  
+• Mobile optimized UI  
+• Direct WhatsApp purchasing
+
+Customers can explore pieces in detail before initiating direct contact with the brand.
+
+
+
+## 🚀 Core Features
+
+### Luxury Product Carousel
+A cinematic carousel powered by **Embla Carousel** allowing smooth product browsing.
+
+### Fullscreen Product View
+Interactive fullscreen view with product details and call-to-action.
+
+### Responsive Design
+Fully optimized for:
+
+- Desktop
+- Tablet
+- Mobile
+
+### Smooth Motion System
+Animations powered by **Framer Motion** deliver refined interactions and transitions.
+
+### Direct Purchase Integration
+WhatsApp integration enabling fast customer communication.
+
+
+
+## 🧰 Technology Stack
+
+| Technology | Description |
+|------------|------------|
+| React | Component-based UI development |
+| TypeScript | Strongly typed JavaScript |
+| TailwindCSS | Utility-first styling framework |
+| Framer Motion | Animation and motion library |
+| Embla Carousel | Lightweight carousel engine |
+| Vite | Fast modern build tool |
+
+
+
+## 🏗 Architecture
+
+The project follows a scalable and modular structure designed for maintainability.
+```
+src
+│
+├── components
+│ Header.tsx
+│ Footer.tsx
+│
+├── features
+│ └── products
+│ LuxuryFullscreenCarousel.tsx
+│
+├── assets
+│ Images and media
+│
+├── pages
+│ Home.tsx
+│
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Each feature is isolated to improve scalability and maintain clean separation of concerns.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📱 Mobile Experience
+
+Special attention was given to the mobile experience.
+
+Improvements include:
+
+• Touch-friendly interactions  
+• Optimized carousel layout  
+• Adaptive spacing  
+• Performance optimizations  
+
+The result is a luxury browsing experience across all screen sizes.
+
+---
+
+## 📸 Visual Identity
+
+The design language is inspired by premium jewelry brands such as:
+
+Cartier  
+Tiffany & Co.  
+Bvlgari  
+
+The interface focuses on:
+
+• Neutral backgrounds  
+• Gold accent colors  
+• Serif typography  
+• Minimalistic layouts
+
+---
+
+## ⚡ Performance
+
+The project leverages modern tooling to achieve fast performance:
+
+• Vite build optimization  
+• Optimized images  
+• Lightweight animation libraries  
+• Responsive asset loading
+
+---
+
+## 🔧 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Daniela2319/website-kb-jewelry.git
 ```
+

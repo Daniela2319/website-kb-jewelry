@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion, AnimatePresence } from "framer-motion";
-import image1 from "../assets/photo-feature3.webp";
-import image2 from "../assets/photo-banner.png";
-import image3 from "../assets/photo-feature2.webp";
-import image4 from "../assets/photo-feat1.png";
-import image5 from "../assets/photo-carosel.png";
+import image1 from "../../assets/photo-feature3.webp";
+import image2 from "../../assets/photo-banner.png";
+import image3 from "../../assets/photo-feature2.webp";
+import image4 from "../../assets/photo-feat1.png";
+import image5 from "../../assets/photo-carosel.png";
 
 type Product = {
   id: number;

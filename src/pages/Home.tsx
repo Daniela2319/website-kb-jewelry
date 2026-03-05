@@ -1,12 +1,12 @@
 // pages/Home.tsx
-import { About } from "../components/About";
-import { FeaturedCollection } from "../components/FeaturedCollection";
+import { About } from "../features/products/About";
+import { FeaturedCollection } from "../features/products/FeaturedCollection";
 import { Footer } from "../components/Footer";
 import { LuxuryHeader } from "../components/Header";
-import { Hero } from "../components/Hero";
-import { Testimonials } from "../components/Testimonials";
-import { LuxuryFullscreenCarousel } from "../components/ProductCarousel";
-import { LuxuryCampaignSection } from "../components/LuxuryCampaignBanner";
+import { Hero } from "../features/products/Hero";
+import { Testimonials } from "../features/products/Testimonials";
+import { LuxuryFullscreenCarousel } from "../features/products/ProductCarousel";
+import { LuxuryCampaignSection } from "../features/products/LuxuryCampaignBanner";
 
 export const Home = () => {
   return (

@@ -1,6 +1,6 @@
 // components/Hero.tsx
 import React from "react";
-import image from "../assets/photo-hero.png";
+import image from "../../assets/photo-hero.png";
 
 export const Hero: React.FC = () => {
   return (
