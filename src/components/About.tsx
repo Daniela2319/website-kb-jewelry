@@ -1,13 +1,13 @@
 // features/home/About.tsx
 import { motion } from "framer-motion";
 import { Gem, Hand } from "lucide-react";
-import image from "../assets/photo-about.webp";
+import image from "../assets/photo-carosel.png";
 import image2 from "../assets/photo-feat1.png";
-import image3 from "../assets/photo-about2.png";
+import image3 from "../assets/photo-about.webp";
 
 export const About = () => {
   return (
-    <section className="bg-beigeLuxury py-28 translate-y-16">
+    <section id="about" className="bg-beigeLuxury py-28 translate-y-16">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         {/* ===== IMAGENS ===== */}
         <div className="relative grid grid-cols-2 gap-6">

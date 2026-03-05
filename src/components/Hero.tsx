@@ -4,7 +4,7 @@ import image from "../assets/photo-hero.png";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative bg-beigeLuxury min-h-screen flex items-center translate-y-16">
+    <section className="relative bg-beigeLuxury min-h-screen flex items-center translate-y-16 overflow-hidden">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Texto */}
         <div className="space-y-6 animate-fadeIn">
@@ -15,7 +15,14 @@ export const Hero: React.FC = () => {
             Discover refined jewelry crafted to celebrate femininity,
             sophistication and timeless beauty.
           </p>
-          <button className="bg-softGold text-white px-8 py-3 rounded-full hover:scale-105 transition duration-300 shadow-lg">
+          <button
+            onClick={() =>
+              document.getElementById("featCollection")?.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
+            className="bg-softGold text-white px-8 py-3 rounded-full hover:scale-105 transition duration-300 shadow-lg"
+          >
             Discover Elegance
           </button>
         </div>

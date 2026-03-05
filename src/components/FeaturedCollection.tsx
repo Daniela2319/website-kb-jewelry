@@ -12,7 +12,7 @@ export const FeaturedCollection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="featCollection" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <SectionTitle
           title="Featured Collection"
