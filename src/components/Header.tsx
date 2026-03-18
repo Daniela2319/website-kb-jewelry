@@ -15,7 +15,14 @@ export const LuxuryHeader = () => {
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-around">
         {/* Logo */}
-        <div className="text-2xl tracking-[0.5em] font-light font-serif cursor-pointer">
+        <div
+          className="text-2xl tracking-[0.5em] font-light font-serif cursor-pointer"
+          onClick={() => {
+            document
+              .getElementById("banner-hero")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           {Logo && <img src={Logo} alt="KB Jewels Logo" className="h-10" />}
         </div>
 

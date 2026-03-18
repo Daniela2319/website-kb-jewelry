@@ -25,7 +25,7 @@ export function LuxuryFloatingButtons() {
     <>
       {/* WhatsApp */}
       <motion.a
-        href="https://wa.me/55917088806000"
+        href="https://wa.me/55917088806000?text=Hello! I am interested in the pieces from your collection I saw on the website."
         target="_blank"
         rel="noreferrer"
         initial={{ opacity: 0, y: 40 }}

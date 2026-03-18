@@ -4,7 +4,10 @@ import image from "../../assets/photo-hero.png";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative bg-beigeLuxury min-h-screen flex items-center translate-y-20 overflow-hidden">
+    <section
+      id="banner-hero"
+      className="relative bg-beigeLuxury min-h-screen flex items-center translate-y-20 overflow-hidden"
+    >
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Texto */}
         <div className="space-y-6 animate-fadeIn">

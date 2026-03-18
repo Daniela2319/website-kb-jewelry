@@ -181,10 +181,10 @@ export const LuxuryFullscreenCarousel = () => {
                 <div className="text-white space-y-6">
                   <h3 className="text-4xl font-serifLuxury">{selected.name}</h3>
                   <p className="text-lg">{selected.description}</p>
-                  <p className="text-softGold text-2xl">R$ {selected.price}</p>
+                  <p className="text-softGold text-2xl">$ {selected.price}</p>
 
                   <a
-                    href={`https://wa.me/${whatsappNumber}?text=Olá! Tenho interesse na peça ${selected.name}`}
+                    href={`https://wa.me/${whatsappNumber}?text=Hello! I am interested in the piece ${selected.name}`}
                     target="_blank"
                     className="inline-block bg-softGold text-black px-8 py-4 rounded-full font-semibold"
                   >
